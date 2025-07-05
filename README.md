@@ -31,7 +31,7 @@ The relational database that I created is a MySQL database that houses sleep hea
 
 Here is a screenshot of the database schema that I created in MySQL Workbench:
 
-![Database Schema](Sleep-Analysis-Database-Schema.png)
+![Database Schema](Sleep-Analysis-Database-ERD-Schema.png)
 
 
 # Development Environment
