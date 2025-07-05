@@ -18,7 +18,7 @@ These are just a few of the questions that I had concerning this dataset used fo
 The MySQL Database is somewhat limited on the rows/entries for each feature, I'd love to see or introduce more user data to diversify the dataset as a whole. With that being said, there were a few encountered roadblocks, one of which I am still puzzled about to this day concerning the data entry process and uploading of the dataset itself. This was one area that caused major grief from a performance standpoint as at first due to a 'in-line' error from the MySQL Bench Environment that restricted the uploading of local files. I tried several different methods that I was familiar with as I am fairly comfortable with MySQL and the syntax that surrounds it. With that being said, despite using the terminal to branch, and locally itemize commands, this didn't eradicate the issue. This led me to even the creating a separate python script to index and upload the csv file directly into the table(s) themselves using the sqlite library, along with the specific interelated dependencies, with a login directly into the database within MySQL. Unfortunately despite my best efforts, this script is currently not natively compiling correctly, so an old-school rudimentary system was used of individually assigning each insertion statement; needless to say this was tedious, but I am open to feedback/suggestions pertinent to this approach to either (1) eliminate the need for the script or (2) identify the issue with the 'in-line' error that contributed to file(s) not being recognized by the MySQL environment.
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Sleep Study MySQL Software Demo Video](https://youtu.be/xl00FCAHIJs)
 
 
 # Relational Database
