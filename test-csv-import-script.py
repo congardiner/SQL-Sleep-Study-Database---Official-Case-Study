@@ -12,19 +12,21 @@ conn = mysql.connector.connect(
     database='healthmetrics'
 )
 
-print("Connected to MySQL")
+print("Connected to MySQL Server. Message to Start Sequence...")
 
 
 cursor = conn.cursor()
 
-df = pd.read_csv(r"C:\Users\18cga\Documents\SQL\Sleep_health_and_lifestyle_dataset.csv")
+df = pd.read_csv(r"")
 
-print("CSV columns:", list(df.columns))  # Debug: print column names
+print("CSV columns:", list(df.columns))  
 
-print("CSV loaded")
+print("CSV loaded into the MySQL Workbench.")
 
 
 success = 0
+
+
 
 for idx, row in df.iterrows():
     sql = """
@@ -46,12 +48,18 @@ for idx, row in df.iterrows():
         row.get('Daily Steps', None),
         row.get('Sleep Disorder', None)
     )
+
+
     # Convert NaN to None for MySQL
     values = tuple(None if pd.isna(v) else v for v in values)
     cursor.execute(sql, values)
     success += 1
 
+
+print("Work almost done...")
+
 conn.commit()
 cursor.close()
 conn.close()
-print(f"Inserted {success} rows.")
+print(f"Inserted {success} rows into the database.")
+(print("This is simply a confirmation message..."))
