@@ -20,6 +20,7 @@ The MySQL Database is somewhat limited on the rows/entries for each feature, I'd
 
 [Software Demo Video](http://youtube.link.goes.here)
 
+
 # Relational Database
 
 The relational database that I created is a MySQL database that houses sleep health and lifestyle data. It is designed to store user sleep data, health metrics, and other relevant information that can be queried to gain insights into sleep hygiene and health over time. Intently, I've tried to design and create the database so that it is incredibly easy to use and query, here is a brief overview of the database and its structure:
@@ -30,7 +31,7 @@ The relational database that I created is a MySQL database that houses sleep hea
 
 Here is a screenshot of the database schema that I created in MySQL Workbench:
 
-![Health Metrics Database Schema](C:\Users\18cga\Documents\GitHub\SQL Sleep Study Database\test-csv-import-script.py)
+![Database Schema](Sleep-Analysis-Database-Schema.png)
 
 
 # Development Environment
